@@ -268,6 +268,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Env (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 8573077499280004879, guid: edb6b4777e2caf14fbce0066aa61a11c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -324,6 +328,10 @@ PrefabInstance:
     - target: {fileID: 8573077499280004879, guid: edb6b4777e2caf14fbce0066aa61a11c, type: 3}
       propertyPath: m_Name
       value: Env (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8573077499280004879, guid: edb6b4777e2caf14fbce0066aa61a11c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -382,6 +390,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Env (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 8573077499280004879, guid: edb6b4777e2caf14fbce0066aa61a11c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -438,6 +450,10 @@ PrefabInstance:
     - target: {fileID: 8573077499280004879, guid: edb6b4777e2caf14fbce0066aa61a11c, type: 3}
       propertyPath: m_Name
       value: Env (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8573077499280004879, guid: edb6b4777e2caf14fbce0066aa61a11c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -496,6 +512,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Env (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8573077499280004879, guid: edb6b4777e2caf14fbce0066aa61a11c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -552,6 +572,10 @@ PrefabInstance:
     - target: {fileID: 8573077499280004879, guid: edb6b4777e2caf14fbce0066aa61a11c, type: 3}
       propertyPath: m_Name
       value: Env (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8573077499280004879, guid: edb6b4777e2caf14fbce0066aa61a11c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -610,6 +634,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Env (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 8573077499280004879, guid: edb6b4777e2caf14fbce0066aa61a11c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -666,6 +694,10 @@ PrefabInstance:
     - target: {fileID: 8573077499280004879, guid: edb6b4777e2caf14fbce0066aa61a11c, type: 3}
       propertyPath: m_Name
       value: Env (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8573077499280004879, guid: edb6b4777e2caf14fbce0066aa61a11c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -816,6 +848,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Env (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 8573077499280004879, guid: edb6b4777e2caf14fbce0066aa61a11c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -829,6 +865,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 174714871176144725, guid: edb6b4777e2caf14fbce0066aa61a11c, type: 3}
+      propertyPath: m_Model
+      value: 
+      objectReference: {fileID: 5022602860645237092, guid: e31342b05bfbe824b9f59ef26a77199a, type: 3}
     - target: {fileID: 2169534883185008604, guid: edb6b4777e2caf14fbce0066aa61a11c, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

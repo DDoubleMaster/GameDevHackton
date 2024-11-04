@@ -9,18 +9,28 @@ public class BallAgent : Agent
 	[SerializeField] Transform target;
 
 	Vector3 direction;
+	float distance;
 
 	public override void OnEpisodeBegin()
 	{
-		target.localPosition = transform.localPosition + new Vector3(Random.Range(-4, 4), 0.5f, Random.Range(-4, 4));
+		/*Vector2 onCircle = Random.insideUnitCircle.normalized * 20;
+		Vector3 offset = new Vector3(onCircle.x, 0, onCircle.y);
+		target.localPosition = transform.localPosition + offset;*/
+
+		if (distance > 50f)
+			transform.localPosition = Vector3.zero;
+
+		Vector2 insideCircle = Random.insideUnitCircle * 20f;
+		Vector3 offset = new Vector3(insideCircle.x, 0, insideCircle.y);
+		target.localPosition = transform.localPosition + offset;
 	}
 
 	public override void CollectObservations(VectorSensor sensor)
 	{
 		sensor.AddObservation(transform.position);
-		sensor.AddObservation(transform.rotation);
 		sensor.AddObservation(target.position);
-		sensor.AddObservation(direction);
+		sensor.AddObservation(direction.x);
+		sensor.AddObservation(direction.z);
 	}
 
 	public override void OnActionReceived(ActionBuffers actions)
@@ -29,15 +39,20 @@ public class BallAgent : Agent
 		direction.z = Mathf.Lerp(direction.z, actions.ContinuousActions[1], 0.1f);
 		transform.Translate(direction * Time.deltaTime * BP_Ball.speed);
 
-		float distance = Vector3.Distance(transform.position, target.position);
-		if (distance < 1.5f)
+		distance = Vector3.Distance(transform.position, target.position);
+		if (distance < 2f)
 		{
 			SetReward(1f);
 			EndEpisode();
 		}
-		else if (distance > 10f)
+		else if (distance > 30f)
 		{
-			SetReward(-2f);
+			SetReward(-0.1f);
+			EndEpisode();
+		}
+		else if (Vector3.Distance(Vector3.zero, transform.position) > 100f)
+		{
+			SetReward(-1.5f);
 			EndEpisode();
 		}
 	}

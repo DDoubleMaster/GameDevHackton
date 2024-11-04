@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c9255506bb3bca4a98e33987259c0bd, type: 3}
   m_Name: Ball
   m_EditorClassIdentifier: 
-  speed: 5
+  speed: 10
